@@ -6,13 +6,21 @@ export class GuiModel {
 
     private _guiModel = {
         "application": {
-            "title": "Requirements Engineering Friend Tracker",
+            "title": "Friend Zone",
             "formList": [
                 {
                     "id": "FriendForm",
                     "title": "Friend",
                     "url": "/friend",
                     "formFieldList": [
+                        {
+                            "id": "nickname",
+                            "type": "text",
+                            "name": "Nickname",
+                            "width": 2,
+                            "required": true
+                        },
+
                         {
                             "id": "familyName",
                             "type": "text",
